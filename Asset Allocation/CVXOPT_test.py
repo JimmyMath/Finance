@@ -1,4 +1,4 @@
-#Sharpe ratio maximization using CVXOPT
+#Sharpe ratio maximization after converting it to a convex optimization problem using CVXOPT
 
 import numpy as np
 import pandas as pd
