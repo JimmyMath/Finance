@@ -1,3 +1,5 @@
+#Sharpe ratio maximization using CVXOPT
+
 import numpy as np
 import pandas as pd
 import time
