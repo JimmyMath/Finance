@@ -11,17 +11,9 @@ for _ in range(1):
     import shutil
     import collections
     import copy
-    import zipfile
-    
     from scipy.optimize import minimize
-    import logging
 
-    logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s -  %(levelname)s  -  %(message)s')
-    logging.disable(logging.DEBUG)
-
-  
-
-def wf_analysis(mr_mr, dp, bm_dp, acc_fund, fee, lookback=lookback, bounds=bounds, plot=False):
+def look_back_analysis(mr_mr, dp, bm_dp, acc_fund, fee, lookback=lookback, bounds=bounds):
   
     data_length = len(mr_mr.columns)
     loop_depth = len(mr_mr.index) - lookback + 1  # Running from lookback to len(mr_mr.index)
@@ -115,7 +107,4 @@ if __name__ == "__main__":
     print(C) #비중값
     print(D) #거치식 벤치마크
     print(E) #적립식 벤치마크
-    print(F) #환율반영 거치식
-    print(G) #환율반영 적립식
-    print(H) #환율반영 거치식 벤치마크
-    print(I) #환율반영 적립식 벤치마크
+   
